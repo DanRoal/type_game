@@ -10,3 +10,5 @@ El proyecto se considerará completo una vez que consiga los siguientes puntos.
 - [ ] Cuente errores
 - [ ] 3 modos de juego (30 palabras, personalizada, todas)
 - [ ] Siempre tener la opción de salir
+
+Es probable que vuelva a este proyecto de vez en cuando para practicar ciertos conceptos de Rust añadiendo más características

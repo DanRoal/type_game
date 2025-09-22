@@ -1,3 +1,5 @@
+use std::time::Duration;
+
 pub fn menu_inicial() {
     println!("==============================");
     println!("        Type game :D           ");
@@ -10,7 +12,7 @@ pub fn menu_inicial() {
     println!("Elige una opción: ");
 }
 
-pub fn menu_secundario(){
+pub fn menu_secundario() {
     println!("==============================");
     println!("        Type game :D          ");
     println!("==============================");
@@ -23,6 +25,37 @@ pub fn menu_secundario(){
     println!("Elige una opción: ");
 }
 
-pub fn mensaje_salida(){
-    println!("Muchas gracias por haber estado aquí!!")
+pub fn imprimir_palabra(word: &str){
+    println!("============================================================");
+    println!("                Escribe la siguiente palabra:          ");
+    println!("============================================================");
+    println!("");
+    println!("");
+    println!("                           \x1b[31m{}\x1b[0m", word);
+    println!("");
+    println!("");
+    println!("");
+    println!("Escribe 'salir' para salir");
+    println!("============================================================");
+    println!("");
+}
+
+pub fn mensaje_final(err: u32, tiempo: Duration, cantidad_palabras: u32){
+    println!("============================================================");
+    println!("                ¡¡FELICIDADES, YA ACABASTE!!          ");
+    println!("============================================================");
+    println!("");
+    println!("Terminaste en: {:?}", tiempo);
+    println!("");
+    println!("Tuviste {err} errores");
+    println!("");
+    println!("Escribiste {cantidad_palabras}");
+    println!("");
+    println!("============================================================");
+    println!("");
+
+}
+
+pub fn mensaje_salida() {
+    println!("Muchas gracias por haber estado aquí!!");
 }
