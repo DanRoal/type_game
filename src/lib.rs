@@ -61,6 +61,7 @@ pub fn juego_personalizado() {
                     break;
                 } else {
                     println!("Por favor ingresa un número entre 1 y {}", LISTA.len());
+                    cantidad.clear();
                     continue;
                 }
             }
