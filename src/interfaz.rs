@@ -49,7 +49,7 @@ pub fn mensaje_final(err: u32, tiempo: Duration, cantidad_palabras: u32){
     println!("");
     println!("Tuviste {err} errores");
     println!("");
-    println!("Escribiste {cantidad_palabras}");
+    println!("Escribiste {cantidad_palabras} palabras");
     println!("");
     println!("============================================================");
     println!("");

@@ -37,7 +37,15 @@ pub fn jugar(palabras: Vec<&str>, errores: &mut u32){
 
 
 pub fn juego_clasico(){
-    
+    let mut errores: u32 = 0;
+    let cantidad:u32 = 30;
+    let palabras = elegir_palabras(cantidad.try_into().unwrap());
+    let inicio = Instant::now();
+    jugar(palabras, &mut errores);
+    let duracion = inicio.elapsed();
+    mensaje_final(errores, duracion, cantidad);
+    mensaje_salida();
+    std::process::exit(0);
 }
 
 pub fn juego_personalizado(){
@@ -80,5 +88,14 @@ pub fn juego_personalizado(){
 }
 
 pub fn juego_todas_las_palabras(){
+    let mut errores: u32 = 0;
+    let cantidad:u32 = LISTA.len().try_into().unwrap();
+    let palabras = elegir_palabras(cantidad.try_into().unwrap());
+    let inicio = Instant::now();
+    jugar(palabras, &mut errores);
+    let duracion = inicio.elapsed();
+    mensaje_final(errores, duracion, cantidad);
+    mensaje_salida();
+    std::process::exit(0);
 
 }
