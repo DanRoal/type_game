@@ -25,7 +25,7 @@ pub fn menu_secundario() {
     println!("Elige una opción: ");
 }
 
-pub fn imprimir_palabra(word: &str){
+pub fn imprimir_palabra(word: &str) {
     println!("============================================================");
     println!("                Escribe la siguiente palabra:          ");
     println!("============================================================");
@@ -40,7 +40,7 @@ pub fn imprimir_palabra(word: &str){
     println!("");
 }
 
-pub fn mensaje_final(err: u32, tiempo: Duration, cantidad_palabras: u32){
+pub fn mensaje_final(err: u32, tiempo: Duration, cantidad_palabras: u32) {
     println!("============================================================");
     println!("                ¡¡FELICIDADES, YA ACABASTE!!          ");
     println!("============================================================");
@@ -53,7 +53,6 @@ pub fn mensaje_final(err: u32, tiempo: Duration, cantidad_palabras: u32){
     println!("");
     println!("============================================================");
     println!("");
-
 }
 
 pub fn mensaje_salida() {
