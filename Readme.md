@@ -6,9 +6,9 @@ El juego va de escribir las palabras que se encuentren en la pantalla lo más r�
 
 El proyecto se considerará completo una vez que consiga los siguientes puntos.
 
-- [ ] Que tome el tiempo 
-- [ ] Cuente errores
-- [ ] 3 modos de juego (30 palabras, personalizada, todas)
-- [ ] Siempre tener la opción de salir
+- [x] Que tome el tiempo 
+- [x] Cuente errores
+- [x] 3 modos de juego (30 palabras, personalizada, todas)
+- [x] Siempre tener la opción de salir
 
 Es probable que vuelva a este proyecto de vez en cuando para practicar ciertos conceptos de Rust añadiendo más características
