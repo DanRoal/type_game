@@ -43,7 +43,6 @@ pub fn juego_clasico() {
     let duracion = inicio.elapsed();
     mensaje_final(errores, duracion, cantidad);
     mensaje_salida();
-    std::process::exit(0);
 }
 
 pub fn juego_personalizado() {
@@ -80,7 +79,6 @@ pub fn juego_personalizado() {
     let duracion = inicio.elapsed();
     mensaje_final(errores, duracion, cantidad);
     mensaje_salida();
-    std::process::exit(0);
 }
 
 pub fn juego_todas_las_palabras() {
@@ -92,5 +90,4 @@ pub fn juego_todas_las_palabras() {
     let duracion = inicio.elapsed();
     mensaje_final(errores, duracion, cantidad);
     mensaje_salida();
-    std::process::exit(0);
 }
