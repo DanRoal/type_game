@@ -1,6 +1,7 @@
 use std::time::Duration;
 
 pub fn menu_inicial() {
+    print!("{esc}[2J{esc}[1;1H", esc = 27 as char);
     println!("==============================");
     println!("        Type game :D           ");
     println!("==============================");
@@ -13,6 +14,7 @@ pub fn menu_inicial() {
 }
 
 pub fn menu_secundario() {
+    print!("{esc}[2J{esc}[1;1H", esc = 27 as char);
     println!("==============================");
     println!("        Type game :D          ");
     println!("==============================");
@@ -26,6 +28,7 @@ pub fn menu_secundario() {
 }
 
 pub fn imprimir_palabra(word: &str) {
+    print!("{esc}[2J{esc}[1;1H", esc = 27 as char);
     println!("============================================================");
     println!("                Escribe la siguiente palabra:          ");
     println!("============================================================");
@@ -41,6 +44,7 @@ pub fn imprimir_palabra(word: &str) {
 }
 
 pub fn mensaje_final(err: u32, tiempo: Duration, cantidad_palabras: u32) {
+    print!("{esc}[2J{esc}[1;1H", esc = 27 as char);
     println!("============================================================");
     println!("                ¡¡FELICIDADES, YA ACABASTE!!          ");
     println!("============================================================");
